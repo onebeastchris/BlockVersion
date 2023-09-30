@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group 'net.onebeastchris'
+version '1.0'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://repo.opencollab.dev/main'
+    }
+
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+
+    compileOnly('org.geysermc.geyser:api:2.2.0-SNAPSHOT')
+    compileOnly('org.geysermc.geyser:core:2.2.0-SNAPSHOT')
+}
+
+test {
+    useJUnitPlatform()
+}

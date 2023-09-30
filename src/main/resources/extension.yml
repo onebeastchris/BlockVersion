@@ -1,0 +1,6 @@
+id: blockversion
+name: BlockVersion
+main: net.onebeastchris.extension.blockversion.BlockVersion
+api: 1.0.0
+version: 1.0
+authors: [onebeastchris]
